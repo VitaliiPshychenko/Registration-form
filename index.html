@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registaration form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form name="registration-form" action="" class="registration-form">
+    <label for="fullName">Full Name:</label>
+    <input type="text" name="fullName" id="full-name" placeholder="Enter your full name" autocomplete="off" class="name" >
+    <label>
+      <input type="checkbox" name="prefer" id="prefer">
+      <span>I would prefer not to specify my phone number and home town</span>
+    </label>
+    <div id="additional-info">
+      <label >Phone number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="off" class="phone">
+      <label>
+        <span>Select your region:</span>
+        <select name="regions" id="regions">
+          <option value=""></option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Center">Center</option>
+          <option value="North">North</option>
+          <option value="East">East</option>
+          <option value="South">South</option>
+          <option value="West">West</option>
+        </select>
+      </label>
+      <label id="city-label" class="hidden">
+        <span>Select your city:</span>
+        <select name="city" id="cities"></select>
+      </label>
+    </div>
+    <input type="submit" name="submit" value="Submit" id="submit-btn" class="submit-btn" disabled>
+  </form>
+
+  <script src="./main.js"></script>
+</body>
+</html>
