@@ -9,17 +9,21 @@
 </head>
 <body>
   <form name="registration-form" action="" class="registration-form">
-    <label for="fullName">Full Name:</label>
-    <input type="text" name="fullName" id="full-name" placeholder="Enter your full name" autocomplete="off" class="name" >
+    <label for="fullName">
+      <span class="label-title">Full Name:</span>
+      <input type="text" name="fullName" id="full-name" placeholder="Enter your full name" autocomplete="off" class="name" >
+    </label>
     <label>
       <input type="checkbox" name="prefer" id="prefer">
-      <span>I would prefer not to specify my phone number and home town</span>
+      <span class="label-title">I would prefer not to specify my phone number and home town</span>
     </label>
     <div id="additional-info">
-      <label >Phone number:</label>
-        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="off" class="phone">
       <label>
-        <span>Select your region:</span>
+        <span class="label-title">Phone number:</span>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="off" class="phone">
+      </label>
+      <label>
+        <span class="label-title">Select your region:</span>
         <select name="regions" id="regions">
           <option value=""></option>
           <option value="Kyiv">Kyiv</option>
@@ -31,7 +35,7 @@
         </select>
       </label>
       <label id="city-label" class="hidden">
-        <span>Select your city:</span>
+        <span class="label-title">Select your city:</span>
         <select name="city" id="cities"></select>
       </label>
     </div>
