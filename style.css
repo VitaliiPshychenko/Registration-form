@@ -1,5 +1,6 @@
 body {
-  background: #eee;
+  background-image: url('./css-lattice-pattern.png'); 
+  background-size: cover;
   margin: 100px 0 0;
 }
 
